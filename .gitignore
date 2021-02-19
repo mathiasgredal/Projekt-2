@@ -1,0 +1,3 @@
+/build-*
+/extern
+CMakeLists.txt.user
