@@ -1,4 +1,4 @@
-#include "../Headers/videoviewsurface.h"
+#include "../Headers/videoplayer.h"
 
 void Log(void* ptr, int level, const char* fmt, va_list vargs)
 {

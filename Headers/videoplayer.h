@@ -1,5 +1,5 @@
-#ifndef VIDEOVIEWSURFACE_H
-#define VIDEOVIEWSURFACE_H
+#ifndef VIDEOPLAYER_H
+#define VIDEOPLAYER_H
 #include <iostream>
 
 #include <QWidget>
@@ -97,4 +97,4 @@ private:
     std::atomic_bool reading_buffer = false;
 };
 
-#endif // VIDEOVIEWSURFACE_H
+#endif // VIDEOPLAYER_H

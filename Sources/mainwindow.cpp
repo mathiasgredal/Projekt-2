@@ -1,6 +1,5 @@
 #include "mainwindow.h"
 #include "../Forms/ui_mainwindow.h"
-#include "../Vendor/QtConsole/include/qconsole.h"
 
 
 MainWindow::MainWindow(QWidget *parent)

@@ -6,10 +6,8 @@
 #include <QSerialPort>
 #include <QSerialPortInfo>
 
-#include "../Headers/videoview.h"
+#include "../Headers/videoplayer.h"
 #include <QMediaPlayer>
-
-#include "videoviewsurface.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
