@@ -53,6 +53,7 @@ public:
     QVector2D Video_Size() const;
 
     QImage getCurrentImage();
+    QString getUrl();
 
     Video_Connection_Status status = Video_Connection_Status::Disconnected;
     std::atomic_bool pause = false;
@@ -66,6 +67,7 @@ private:
     QGraphicsScene* scene;
     QGraphicsPixmapItem* item;
     QPixmap buffer;
+    QString videoUrl;
 
     // Conversion
     AVFormatContext* stream_context;

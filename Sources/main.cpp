@@ -1,5 +1,4 @@
 #include "mainwindow.h"
-//#include "objectdetector.h"
 
 #include <iostream>
 
@@ -8,37 +7,110 @@
 #include <array>
 #include <vector>
 
-
-const std::vector<std::string> classes = {"person", "bicycle", "car", "motorcycle", "airplane", "bus", "train", "truck", "boat", "traffic light",
-                                             "fire hydrant", "stop sign", "parking meter", "bench", "bird", "cat", "dog", "horse", "sheep", "cow",
-                                             "elephant", "bear", "zebra", "giraffe", "backpack", "umbrella", "handbag", "tie", "suitcase", "frisbee",
-                                             "skis", "snowboard", "sports ball", "kite", "baseball bat", "baseball glove", "skateboard", "surfboard",
-                                             "tennis racket", "bottle", "wine glass", "cup", "fork", "knife", "spoon", "bowl", "banana", "apple",
-                                             "sandwich", "orange", "broccoli", "carrot", "hot dog", "pizza", "donut", "cake", "chair", "couch",
-                                             "potted plant", "bed", "dining table", "toilet", "tv", "laptop", "mouse", "remote", "keyboard", "cell phone",
-                                             "microwave", "oven", "toaster", "sink", "refrigerator", "book", "clock", "vase", "scissors", "teddy bear",
-                                             "hair drier", "toothbrush" };
-
 int main(int argc, char *argv[])
 {
-//    ObjectDetector detector = ObjectDetector( "../Assets/yolov5s-fp16.tflite", classes);
-
-    // Load image
-    QImage img("../Assets/bus.jpg");
-    if(img.isNull())
-        throw std::runtime_error("ERROR: Could not load image");
-
-//    auto predictions = detector.Predict(img);
-
-//    for(auto pred : predictions) {
-//        std::cout << pred.label << "(" << pred.confidence << "): ";
-//        std::cout << "TL(" << pred.bbox.topLeft().x() << "; " << pred.bbox.topLeft().y() << "), ";
-//        std::cout << "BR(" << pred.bbox.bottomRight().x() << "; " << pred.bbox.bottomRight().y() << ")";
-//        std::cout << std::endl;
-//    }
-
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
     return a.exec();
 }
+
+//#include <QGuiApplication>
+
+//#include <Qt3DCore/QEntity>
+//#include <Qt3DRender/QCamera>
+//#include <Qt3DRender/QCameraLens>
+//#include <Qt3DCore/QTransform>
+//#include <Qt3DCore/QAspectEngine>
+
+//#include <Qt3DInput/QInputAspect>
+
+//#include <Qt3DRender/QRenderAspect>
+//#include <Qt3DExtras/QForwardRenderer>
+//#include <Qt3DExtras/QPhongMaterial>
+//#include <Qt3DExtras/QCylinderMesh>
+//#include <Qt3DExtras/QSphereMesh>
+//#include <Qt3DExtras/QTorusMesh>
+//#include <QFirstPersonCameraController>
+
+//#include <QPropertyAnimation>
+
+//#include "qt3dwindow.h"
+//#include "orbittransformcontroller.h"
+//#include "qorbitcameracontroller.h"
+
+//Qt3DCore::QEntity *createScene()
+//{
+//    // Root entity
+//    Qt3DCore::QEntity *rootEntity = new Qt3DCore::QEntity;
+
+//    // Material
+//    Qt3DRender::QMaterial *material = new Qt3DExtras::QPhongMaterial(rootEntity);
+
+//    // Torus
+//    Qt3DCore::QEntity *torusEntity = new Qt3DCore::QEntity(rootEntity);
+//    Qt3DExtras::QTorusMesh *torusMesh = new Qt3DExtras::QTorusMesh;
+//    torusMesh->setRadius(5);
+//    torusMesh->setMinorRadius(1);
+//    torusMesh->setRings(100);
+//    torusMesh->setSlices(20);
+
+//    Qt3DCore::QTransform *torusTransform = new Qt3DCore::QTransform;
+//    torusTransform->setScale3D(QVector3D(1, 1, 1));
+//    torusTransform->setRotation(QQuaternion::fromAxisAndAngle(QVector3D(1, 0, 0), 45.0f));
+
+//    torusEntity->addComponent(torusMesh);
+//    torusEntity->addComponent(torusTransform);
+//    torusEntity->addComponent(material);
+
+//    // Sphere
+//    Qt3DCore::QEntity *sphereEntity = new Qt3DCore::QEntity(rootEntity);
+//    Qt3DExtras::QSphereMesh *sphereMesh = new Qt3DExtras::QSphereMesh;
+//    sphereMesh->setRadius(3);
+//    sphereMesh->setGenerateTangents(true);
+
+//    Qt3DCore::QTransform *sphereTransform = new Qt3DCore::QTransform;
+//    OrbitTransformController *controller = new OrbitTransformController(sphereTransform);
+//    controller->setTarget(sphereTransform);
+//    controller->setRadius(20.0f);
+
+//    QPropertyAnimation *sphereRotateTransformAnimation = new QPropertyAnimation(sphereTransform);
+//    sphereRotateTransformAnimation->setTargetObject(controller);
+//    sphereRotateTransformAnimation->setPropertyName("angle");
+//    sphereRotateTransformAnimation->setStartValue(QVariant::fromValue(0));
+//    sphereRotateTransformAnimation->setEndValue(QVariant::fromValue(360));
+//    sphereRotateTransformAnimation->setDuration(10000);
+//    sphereRotateTransformAnimation->setLoopCount(-1);
+//    sphereRotateTransformAnimation->start();
+
+//    sphereEntity->addComponent(sphereMesh);
+//    sphereEntity->addComponent(sphereTransform);
+//    sphereEntity->addComponent(material);
+
+//    return rootEntity;
+//}
+
+//int main(int argc, char* argv[])
+//{
+//    QGuiApplication app(argc, argv);
+//    Qt3DExtras::Qt3DWindow view;
+
+//    Qt3DCore::QEntity *scene = createScene();
+
+//    // Camera
+//    Qt3DRender::QCamera *camera = view.camera();
+//    camera->lens()->setPerspectiveProjection(45.0f, 16.0f/9.0f, 0.1f, 1000.0f);
+//    camera->setPosition(QVector3D(0, 0, 40.0f));
+//    camera->setViewCenter(QVector3D(0, 0, 0));
+
+//    // For camera controls
+//    Qt3DExtras::QFirstPersonCameraController *camController = new Qt3DExtras::QFirstPersonCameraController(scene);
+//    camController->setLinearSpeed( 50.0f );
+//    camController->setLookSpeed( 180.0f );
+//    camController->setCamera(camera);
+
+//    view.setRootEntity(scene);
+//    view.show();
+
+//    return app.exec();
+//}

@@ -24,6 +24,7 @@ VideoPlayer::VideoPlayer(QGraphicsView *widget, QString url) : widget(widget)
     scene = new QGraphicsScene(this);
     widget->setScene(scene);
 
+    videoUrl = url;
 
     //Initialize video decoding
     stream_context = avformat_alloc_context();
@@ -67,6 +68,8 @@ VideoPlayer::VideoPlayer(QGraphicsView *widget, QString url) : widget(widget)
 
     // We assume h264 frames
     codec = avcodec_find_decoder(AV_CODEC_ID_H264);
+//    codec = avcodec_find_decoder(AV_CODEC_ID_MPEG4);
+
     if (!codec)
         throw std::runtime_error("ERROR: The linked ffmpeg library seems not to have an h264 decoder");
 
@@ -136,6 +139,11 @@ QImage VideoPlayer::getCurrentImage()
     return tempImage;
 }
 
+QString VideoPlayer::getUrl()
+{
+    return videoUrl;
+}
+
 void VideoPlayer::updateVideo()
 {
     if(pause)
@@ -184,7 +192,7 @@ void VideoPlayer::Decode_Stream()
                  writing_buffer = false;
 
                  // Update sfml video image thing
-                 std::cout << "Frame: " << frame_count << ", FPS: " << frame_count / (float)(std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now().time_since_epoch()).count() - time) << std::endl;
+//                 std::cout << "Frame: " << frame_count << ", FPS: " << frame_count / (float)(std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now().time_since_epoch()).count() - time) << std::endl;
                  frame_count++;
              }
          }

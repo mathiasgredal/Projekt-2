@@ -8,6 +8,13 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # CMake Package Manager
 include(${CMAKE_SOURCE_DIR}/cmake/CPM.cmake)
 
+# Add libfmt
+CPMAddPackage(
+  NAME fmt
+  GIT_TAG "7.1.3"
+  GIT_REPOSITORY https://github.com/fmtlib/fmt
+)
+
 # Add TFLite
 CPMAddPackage(
         NAME tensorflow
@@ -38,19 +45,23 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
-find_package(Qt5 CONFIG REQUIRED Core Widgets Gui SerialPort Multimedia)
+find_package(Qt5 CONFIG REQUIRED Core Widgets Gui SerialPort Multimedia 3DCore 3DExtras 3DRender 3DInput)
 
 set(SOURCES
         Sources/main.cpp
         Sources/mainwindow.cpp
         Sources/videoplayer.cpp
         Sources/objectdetector.cpp
+        Sources/predictionvisualizer.cpp
+        Sources/orbittransformcontroller.cpp
 )
 
 set(HEADERS
         Headers/mainwindow.h
         Headers/videoplayer.h
         Headers/objectdetector.h
+        Headers/predictionvisualizer.h
+        Headers/orbittransformcontroller.h
 )
 
 set(FORMS
@@ -59,12 +70,17 @@ set(FORMS
 
 add_executable(Projekt_2 ${SOURCES} ${HEADERS} ${FORMS})
 target_link_libraries(Projekt_2 PRIVATE
+    fmt
     tensorflow-lite ${CMAKE_DL_LIBS}
     Qt5::Core
     Qt5::Gui
     Qt5::Widgets
     Qt5::SerialPort
     Qt5::Multimedia
+    Qt5::3DCore
+    Qt5::3DExtras
+    Qt5::3DRender
+    Qt5::3DInput
     PkgConfig::LIBAV
     Threads::Threads)
 include_directories(Projekt_2 PRIVATE Headers)

@@ -5,6 +5,7 @@
 #include <string>
 #include <vector>
 #include <map>
+#include <thread>
 
 #include <tensorflow/lite/interpreter.h>
 #include <tensorflow/lite/kernels/register.h>
@@ -12,6 +13,8 @@
 #include <tensorflow/lite/optional_debug_tools.h>
 
 #include <QImage>
+#include <QPixmap>
+#include <QPainter>
 #include <QRect>
 
 struct Prediction {
@@ -22,12 +25,17 @@ struct Prediction {
 };
 
 
-class ObjectDetector
-{
+class ObjectDetector : public QObject {
+    Q_OBJECT
 public:
     ObjectDetector(std::string path, std::vector<std::string> classLabels);
 
-    std::vector<Prediction> Predict(QImage image);
+    void Predict(QImage image);
+
+    QSize GetInputSize();
+
+signals:
+    void onFinishPrediction(std::vector<Prediction> predictions);
 private:
     // TFLite data
     std::unique_ptr<tflite::FlatBufferModel> model;
@@ -35,6 +43,7 @@ private:
     std::unique_ptr<tflite::Interpreter> interpreter;
 
     // Model IO data
+    std::thread t1;
     int imageWidth = 0;
     int imageHeight = 0;
     int imageChannels = 0; // Color channels, typically 3(RGB)

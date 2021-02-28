@@ -1,4 +1,4 @@
-#include "objectdetector.h"
+#include "../Headers/objectdetector.h"
 
 #include <iostream>
 
@@ -51,78 +51,96 @@ ObjectDetector::ObjectDetector(std::string path, std::vector<std::string> classL
     if(interpreter->AllocateTensors() != kTfLiteOk)
         throw std::runtime_error("ERROR: Could not allocate tensorbuffers. Are we out of memory?");
     // tflite::PrintInterpreterState(interpreter.get()); // Use this for getting detailed info about model
-
 }
 
-std::vector<Prediction> ObjectDetector::Predict(QImage image)
+void ObjectDetector::Predict(QImage _image)
 {
-    std::vector<float> inputval = std::vector<float>();
+    if(t1.joinable())
+        t1.join();
 
-    // Make the right format for neural network
-    image.convertTo(QImage::Format::Format_RGB32);
-    image.scaled(imageWidth, imageHeight, Qt::AspectRatioMode::KeepAspectRatio);
+    t1 = std::thread([=]() {
 
-    for(int64_t y = 0; y < image.height(); y++) {
-        for(int64_t x = 0; x < image.width(); x++) {
-            QRgb pixel = image.pixel(x, y);
-            inputval.push_back(((qRed(pixel) / 255.0)-0.5)*2.0);
-            inputval.push_back(((qGreen(pixel) / 255.0)-0.5)*2.0);
-            inputval.push_back(((qBlue(pixel) / 255.0)-0.5)*2.0);
-        }
-    }
+        std::vector<float> inputval = std::vector<float>();
 
-    // Get input & output layer
-    float* inputLayer = interpreter->typed_input_tensor<float>(0);
+        // Make the right format for neural network
+        QImage scaledImage = _image.scaled(imageWidth, imageHeight, Qt::AspectRatioMode::KeepAspectRatio, Qt::SmoothTransformation);
 
-    // The output is split into 6300 rows. Each row i 85 long. first 4 is
-    float* outputLayer = interpreter->typed_output_tensor<float>(0);
+        QPixmap squareImage(imageWidth, imageHeight);
+        squareImage.fill(Qt::black);
+        QPainter painter = QPainter(&squareImage);
+        painter.drawImage(QPoint(0, 0), scaledImage);
+        painter.end();
 
-    // flatten rgb image to input layer.
-    float* inputImg_ptr = inputval.data();
-    memcpy(inputLayer, inputImg_ptr, imageWidth * imageHeight * imageChannels * sizeof(float));
+        QImage image = squareImage.toImage();
+        image.convertTo(QImage::Format::Format_RGB32);
 
-    // Run inference
-    if(interpreter->Invoke() != kTfLiteOk)
-        throw std::runtime_error("ERROR: Could not run inference");
-
-    // Results, these should be replaced with a combined class/struct
-    std::vector<Prediction> predictions = {};
-
-    for (int i = 0; i < numBoxes; i++) {
-        int index = i * dimensions;
-        // Skip detection on low confidence, tveak this value for more detections
-        if(outputLayer[index+confidenceIndex] <= Confidence_thresshold) continue;
-        Prediction pred = {};
-        pred.confidence = outputLayer[index+confidenceIndex];
-
-        // Tveak label confidence based on overall confidence
-        for (int j = labelStartIndex; j < dimensions; j++) {
-            outputLayer[index+j] = outputLayer[index+j] * outputLayer[index+confidenceIndex];
-            pred.labelScores.push_back(outputLayer[index+j]);
+        for(int64_t y = 0; y < image.height(); y++) {
+            for(int64_t x = 0; x < image.width(); x++) {
+                QRgb pixel = image.pixel(x, y);
+                inputval.push_back(((qRed(pixel) / 255.0)-0.5)*2.0);
+                inputval.push_back(((qGreen(pixel) / 255.0)-0.5)*2.0);
+                inputval.push_back(((qBlue(pixel) / 255.0)-0.5)*2.0);
+            }
         }
 
-        // Create bounding box from first 4 items in row
-        const float topLeftX =     (outputLayer[index] - outputLayer[index+2] / 2)*imageWidth;
-        const float topLeftY =     (outputLayer[index + 1] - outputLayer[index+3] / 2)*imageHeight;
-        const float bottomRightX = (outputLayer[index] + outputLayer[index+2] / 2)*imageWidth;
-        const float bottomRightY = (outputLayer[index + 1] + outputLayer[index+3] / 2)*imageHeight;
-        const QRectF bbox = QRectF(QPointF(topLeftX, topLeftY), QPointF(bottomRightX, bottomRightY));
+        // Get input & output layer
+        float* inputLayer = interpreter->typed_input_tensor<float>(0);
 
-        pred.bbox = bbox;
-        predictions.push_back(pred);
-    }
+        // The output is split into 6300 rows. Each row i 85 long. first 4 is
+        float* outputLayer = interpreter->typed_output_tensor<float>(0);
 
-    std::vector<Prediction> filtered_predictions = nms(predictions, IOU_thresshold);
+        // flatten rgb image to input layer.
+        float* inputImg_ptr = inputval.data();
+        memcpy(inputLayer, inputImg_ptr, imageWidth * imageHeight * imageChannels * sizeof(float));
 
-    // Add labels
-    for(auto& pred : filtered_predictions) {
-        size_t index = std::max_element(pred.labelScores.begin(), pred.labelScores.end()) - pred.labelScores.begin();
-        pred.label = labels[index];
-    }
+        // Run inference
+        if(interpreter->Invoke() != kTfLiteOk)
+            throw std::runtime_error("ERROR: Could not run inference");
 
-    return filtered_predictions;
+        // Results, these should be replaced with a combined class/struct
+        std::vector<Prediction> predictions = {};
+
+        for (int i = 0; i < numBoxes; i++) {
+            int index = i * dimensions;
+            // Skip detection on low confidence, tveak this value for more detections
+            if(outputLayer[index+confidenceIndex] <= Confidence_thresshold) continue;
+            Prediction pred = {};
+            pred.confidence = outputLayer[index+confidenceIndex];
+
+            // Tveak label confidence based on overall confidence
+            for (int j = labelStartIndex; j < dimensions; j++) {
+                outputLayer[index+j] = outputLayer[index+j] * outputLayer[index+confidenceIndex];
+                pred.labelScores.push_back(outputLayer[index+j]);
+            }
+
+            // Create bounding box from first 4 items in row
+            const float topLeftX =     (outputLayer[index] - outputLayer[index+2] / 2)*imageWidth;
+            const float topLeftY =     (outputLayer[index + 1] - outputLayer[index+3] / 2)*imageHeight;
+            const float bottomRightX = (outputLayer[index] + outputLayer[index+2] / 2)*imageWidth;
+            const float bottomRightY = (outputLayer[index + 1] + outputLayer[index+3] / 2)*imageHeight;
+            const QRectF bbox = QRectF(QPointF(topLeftX, topLeftY), QPointF(bottomRightX, bottomRightY));
+
+            pred.bbox = bbox;
+            predictions.push_back(pred);
+        }
+
+        std::vector<Prediction> filtered_predictions = nms(predictions, IOU_thresshold);
+
+        // Add labels
+        for(auto& pred : filtered_predictions) {
+            size_t index = std::max_element(pred.labelScores.begin(), pred.labelScores.end()) - pred.labelScores.begin();
+            pred.label = labels[index];
+        }
+        emit onFinishPrediction(filtered_predictions);
+        return;
+    });
+    return;
 }
 
+QSize ObjectDetector::GetInputSize()
+{
+    return QSize(imageWidth, imageHeight);
+}
 
 constexpr float area(const QRectF& rect) {
     return rect.width()*rect.height();
