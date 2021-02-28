@@ -54,6 +54,7 @@ set(SOURCES
         Sources/objectdetector.cpp
         Sources/predictionvisualizer.cpp
         Sources/orbittransformcontroller.cpp
+        Sources/IKSimulator.cpp
 )
 
 set(HEADERS
@@ -62,6 +63,7 @@ set(HEADERS
         Headers/objectdetector.h
         Headers/predictionvisualizer.h
         Headers/orbittransformcontroller.h
+        Headers/IKSimulator.h
 )
 
 set(FORMS

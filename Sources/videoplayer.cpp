@@ -67,8 +67,8 @@ VideoPlayer::VideoPlayer(QGraphicsView *widget, QString url) : widget(widget)
     av_read_play(stream_context);
 
     // We assume h264 frames
-    codec = avcodec_find_decoder(AV_CODEC_ID_H264);
-//    codec = avcodec_find_decoder(AV_CODEC_ID_MPEG4);
+//    codec = avcodec_find_decoder(AV_CODEC_ID_H264);
+    codec = avcodec_find_decoder(AV_CODEC_ID_MPEG4);
 
     if (!codec)
         throw std::runtime_error("ERROR: The linked ffmpeg library seems not to have an h264 decoder");

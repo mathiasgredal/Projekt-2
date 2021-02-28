@@ -35,11 +35,25 @@ MainWindow::MainWindow(QWidget *parent)
     for(auto baud : QSerialPortInfo::standardBaudRates()) {
         ui->baud->addItem(QString::number(baud));
     }
+
+    // Add IK Simulator view
+    view = std::make_shared<Qt3DExtras::Qt3DWindow>();
+    view->defaultFrameGraph()->setClearColor(Qt::gray);
+    viewContainer = QWidget::createWindowContainer(view.get());
+
+    QHBoxLayout *hLayout = new QHBoxLayout(this);
+    hLayout->setMargin(0);
+    hLayout->addWidget(viewContainer);
+    ui->IKTab->setLayout(hLayout);
+
+    rootEntity = std::make_shared<Qt3DCore::QEntity>();
+
+    // This sets up the entire scene graph
+    simulator = std::make_unique<IKSimulator>(view, rootEntity);
 }
 
 MainWindow::~MainWindow()
 {
-    delete videoSurface;
     delete ui;
 }
 
@@ -106,13 +120,12 @@ void MainWindow::PauseVideoPlayer() {
 }
 
 void MainWindow::DeleteVideoPlayer() {
-    delete videoSurface;
-    videoSurface = nullptr;
+    videoSurface.reset();
 }
 
 void MainWindow::RecreateVideoPlayer(QString url) {
     if(videoSurface == nullptr)
-        videoSurface = new VideoPlayer(ui->video, url);
+        videoSurface = std::make_unique<VideoPlayer>(ui->video, url);
     else {
         DeleteVideoPlayer();
         RecreateVideoPlayer(url);
