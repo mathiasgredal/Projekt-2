@@ -108,7 +108,7 @@
           <item>
            <widget class="QPushButton" name="draw_rectangles">
             <property name="text">
-             <string>Draw rectangles</string>
+             <string>Sort Piece</string>
             </property>
            </widget>
           </item>

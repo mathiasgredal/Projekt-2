@@ -96,12 +96,17 @@ IKSimulator::IKSimulator(std::shared_ptr<Qt3DExtras::Qt3DWindow> _view, std::sha
     segment2Entity->addComponent(segment2Material);
     segment2Entity->addComponent(segment2Transform);
 
-    setArmPosition(-10, 45, 90);
+    IKSolve(armEndeffector);
 
     // Targets
-    targetPieces.push_back(std::make_unique<TargetPiece>("yeet", QVector3D(-1, 0, -0.5), QVector3D(0.5, 0.2, 0.4), Qt::green, rootEntity));
+    targetPieces.push_back(new TargetPiece("test", QVector3D(-1, 0, -2), QVector3D(0.5, 0.2, 0.4), Qt::red, rootEntity));
+    targetPieces.push_back(new TargetPiece("test2", QVector3D(-0.0, 0, 0.5), QVector3D(0.3, 0.3, 0.5), Qt::blue, rootEntity));
+    targetPieces.push_back(new TargetPiece("test", QVector3D(-0.7, 0, 1), QVector3D(0.3, 0.3, 0.7), Qt::green, rootEntity));
 
-    IKSolve(QVector3D(-1, 0, -0.5));
+    // This is responsible for smoothly moving the arm
+    timer = new QTimer(this);
+    QObject::connect(timer, SIGNAL(timeout()), this, SLOT(moveArm()));
+    timer->start(33);
 }
 
 IKSimulator::~IKSimulator()
@@ -113,78 +118,126 @@ void IKSimulator::IKSolve(QVector3D endPosition) {
     QVector3D baseToTarget = endPosition - QVector3D(-5.0f, 0.25f, 0.0f);
     float baseAngle = -qRadiansToDegrees(tan(baseToTarget.z()/baseToTarget.x()));
 
-    // Segment 1 angle
-
-    // This is effectivly our x-coord
+    // Convert 3d coordinates to 2d
     float x = sqrt(baseToTarget.z()*baseToTarget.z()+baseToTarget.x()*baseToTarget.x());
-    // This is effectivly our y-coord
     float y = baseToTarget.y();
+
     float l1 = segment1Length;
     float l2 = segment2Length;
 
     float q2 = acos((x*x+y*y-l1*l1-l2*l2)/(2*l1*l2));
-//    float q2 = 3.1415926 - acos((l1*l1+l2*l2-x*x-y*y)/(2*l1*l2));
     float q1 = atan(x/y)-atan((l2*sin(q2))/(l1+l2*cos(q2)));
 
-    std::cout << "Joint 2 angle: " << qRadiansToDegrees(q1+q2)+180 << std::endl;
+    setArmPosition(baseAngle, qRadiansToDegrees(q1), qRadiansToDegrees(q2));
+}
 
-    setArmPosition(baseAngle, qRadiansToDegrees(q1) - 180, qRadiansToDegrees(q2));
+void IKSimulator::SortPiece()
+{
+    // Check if there are any pieces to sort
+    if(targetPieces.size() != 0 && sortState == SortState::None) {
+        sortingTarget = targetPieces.at(targetPieces.size()-1);
+        targetPieces.pop_back();
+
+        // Set vector path
+        movementProgress = 0;
+        movementStart = armEndeffector;
+        movementPath = sortingTarget->getPosition() - movementStart;
+        sortState = SortState::ToPiece;
+    }
+}
+
+void IKSimulator::moveArm()
+{
+    if(sortState != SortState::None && movementProgress <= 1) {
+        armEndeffector = movementStart + movementPath*movementProgress;
+        IKSolve(armEndeffector);
+        movementProgress += 0.005f * armSpeed;
+
+        if(sortState == SortState::ToDestination)
+            sortingTarget->setPosition(armEndeffector);
+    }
+
+    if(movementProgress >= 1 && sortState == SortState::ToPiece) {
+        // We are at the piece, and we need to go to the destination
+        sortState = SortState::ToDestination;
+        movementProgress = 0;
+        movementStart = armEndeffector;
+        movementPath = QVector3D(0, 0, 0);
+
+        for(auto destination : destinations) {
+            if(destination.name == sortingTarget->getTargetType()) {
+                movementPath = destination.position - movementStart;
+            }
+        }
+
+        // Check if any destination was found
+        if(movementPath ==  QVector3D(0, 0, 0)) {
+            movementProgress = 1;
+        }
+    }
+
+    if(movementProgress >= 1 && sortState == SortState::ToDestination) {
+        // We are at the piece, and we need to go to the destination
+        sortState = SortState::ToRest;
+        movementProgress = 0;
+        movementStart = armEndeffector;
+        movementPath = restPosition - movementStart;
+    }
+
+    if(movementProgress >= 1 && sortState == SortState::ToRest) {
+        // We are at the piece, and we need to go to the destination
+        sortState = SortState::None;
+        movementProgress = 0;
+    }
 }
 
 void IKSimulator::setArmPosition(float _baseRotation, float _joint1Rotation, float _joint2Rotation)
 {
-    // Segment 1
-    baseRotation = _baseRotation;
-    joint1Rotation = _joint1Rotation;
+    // If we operate outside operating area, we try to move the coordinates back in
+    // This is mainly done for the solver, as it often finds a mirrored solution
+    if(_baseRotation <= 90 || _baseRotation >= 270)
+        baseRotation = _baseRotation + 180;
+    else
+        baseRotation = _baseRotation;
+
+    if(_joint1Rotation <= 0 || _joint1Rotation >= 150)
+        joint1Rotation = _joint1Rotation+180;
+    else
+         joint1Rotation = _joint1Rotation;
     joint2Rotation = _joint2Rotation;
 
     auto segment1Matrix = QMatrix4x4();
     segment1Matrix.setToIdentity();
-
     segment1Matrix.translate(QVector3D(-5.0f, segment1Length*0.5+0.5, 0.0f));
-    segment1Matrix.rotate(baseRotation, QVector3D(0.0f, 1.f, 0.0f)); // This is the base rotation
-
+    segment1Matrix.rotate(baseRotation, QVector3D(0.0f, 1.f, 0.0f));
     segment1Matrix.translate(QVector3D(0.0f, -0.5*segment1Length, 0.0f));
-    segment1Matrix.rotate(-joint1Rotation, QVector3D(0.0f, 0.f, 1.0f)); // This is arm rotation
+    segment1Matrix.rotate(joint1Rotation, QVector3D(0.0f, 0.f, 1.0f));
     segment1Matrix.translate(QVector3D(0.0f, 0.5*segment1Length, 0.0f));
     segment1Transform->setMatrix(segment1Matrix);
 
     // Segment 2
     auto segment2Matrix = QMatrix4x4();
+
+    // This took a lot of trial and error
     segment2Matrix.setToIdentity();
-
-    // Calculate the position of the end of segment 1
-    float baseRad = qDegreesToRadians(-baseRotation);
-    float joint1Rad = qDegreesToRadians(joint1Rotation);
-    float baseHypotenus = cos(joint1Rad)*segment1Length;
-
-    float segment1Mod = sin(joint1Rad)*segment1Length;   // Forsk y-akse
-    float baseHos = cos(baseRad)*baseHypotenus; // Forskyd x-akse
-    float baseMod = sin(baseRad)*baseHypotenus; // Forskyd z-akse
-
-//    QVector3D offset = QVector3D(baseHos, segment1Mod, baseMod);
-//    QVector3D offset = QVector3D(-5.f+4*cos(baseRad)*sin(joint1Rad), 0.5f+4*sin(baseRad), 4*cos(baseRad)*cos(joint1Rad));
-
     segment2Matrix.translate(QVector3D(-5.0f, segment2Length*0.5+0.5, 0.0f));
-
-    segment2Matrix.rotate(baseRotation, QVector3D(0.0f, 1.f, 0.0f)); // This is the base rotation
-
+    segment2Matrix.rotate(baseRotation, QVector3D(0.0f, 1.f, 0.0f));
     segment2Matrix.translate(QVector3D(0.0f, -0.5*segment2Length, 0.0f));
-    segment2Matrix.rotate(-joint1Rotation, QVector3D(0.0f, 0.f, 1.0f)); // This is arm rotation
+    segment2Matrix.rotate(joint1Rotation, QVector3D(0.0f, 0.f, 1.0f));
     segment2Matrix.translate(QVector3D(0.0f, 0.5*segment2Length, 0.0f));
-
     segment2Matrix.translate(QVector3D(0.0f, segment1Length, 0.0f));
-
     segment2Matrix.translate(QVector3D(0.0f, -0.5*segment2Length, 0.0f));
-    segment2Matrix.rotate(-joint2Rotation, QVector3D(0.0f, 0.f, 1.0f)); // This is arm rotation
+    segment2Matrix.rotate(joint2Rotation, QVector3D(0.0f, 0.f, 1.0f));
     segment2Matrix.translate(QVector3D(0.0f, 0.5*segment2Length, 0.0f));
     segment2Transform->setMatrix(segment2Matrix);
 }
 
 
-TargetPiece::TargetPiece(QString name, QVector3D position, QVector3D size, QColor color, std::shared_ptr<Qt3DCore::QEntity> rootEntity)
+TargetPiece::TargetPiece(QString name, QVector3D _position, QVector3D size, QColor color, std::shared_ptr<Qt3DCore::QEntity> rootEntity)
 {
     targetType = name;
+    position = _position;
+
     targetMesh = new Qt3DExtras::QCuboidMesh();
     targetMesh->setXExtent(size.x());
     targetMesh->setYExtent(size.y());
@@ -210,4 +263,20 @@ TargetPiece::~TargetPiece()
 Qt3DCore::QEntity *TargetPiece::getTargetEntity() const
 {
     return targetEntity;
+}
+
+QVector3D TargetPiece::getPosition() const
+{
+    return position;
+}
+
+void TargetPiece::setPosition(const QVector3D &value)
+{
+    position = value;
+    targetTransform->setTranslation(value);
+}
+
+QString TargetPiece::getTargetType() const
+{
+    return targetType;
 }

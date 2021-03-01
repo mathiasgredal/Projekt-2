@@ -59,7 +59,9 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_draw_rectangles_clicked()
 {
-
+    if(simulator != nullptr) {
+        simulator->SortPiece();
+    }
 }
 
 void MainWindow::on_load_image_clicked()
