@@ -66,12 +66,16 @@ VideoPlayer::VideoPlayer(QGraphicsView *widget, QString url) : widget(widget)
     // Now we can start reading the video packets
     av_read_play(stream_context);
 
-    // We assume h264 frames
-//    codec = avcodec_find_decoder(AV_CODEC_ID_H264);
-    codec = avcodec_find_decoder(AV_CODEC_ID_MPEG4);
+    if(stream_context->streams[video_stream_index]->codecpar->codec_id) {
+        codec = avcodec_find_decoder(stream_context->streams[video_stream_index]->codecpar->codec_id);
+        std::cout << "Found codec" << std::endl;
+    }
+    else
+        codec = avcodec_find_decoder(AV_CODEC_ID_H264); // We assume h264 frames if no codec is found
+        // codec = avcodec_find_decoder(AV_CODEC_ID_MPEG4);
 
     if (!codec)
-        throw std::runtime_error("ERROR: The linked ffmpeg library seems not to have an h264 decoder");
+        throw std::runtime_error("ERROR: The linked ffmpeg library seems not to have the following decoder: " + std::string(avcodec_get_name(codec->id)));
 
     video_context = avcodec_alloc_context3(codec);
     avcodec_copy_context(video_context, stream_context->streams[video_stream_index]->codec);

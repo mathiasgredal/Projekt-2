@@ -1,15 +1,7 @@
 #include "mainwindow.h"
 #include "../Forms/ui_mainwindow.h"
 
-const std::vector<std::string> classes = {"person", "bicycle", "car", "motorcycle", "airplane", "bus", "train", "truck", "boat", "traffic light",
-                                             "fire hydrant", "stop sign", "parking meter", "bench", "bird", "cat", "dog", "horse", "sheep", "cow",
-                                             "elephant", "bear", "zebra", "giraffe", "backpack", "umbrella", "handbag", "tie", "suitcase", "frisbee",
-                                             "skis", "snowboard", "sports ball", "kite", "baseball bat", "baseball glove", "skateboard", "surfboard",
-                                             "tennis racket", "bottle", "wine glass", "cup", "fork", "knife", "spoon", "bowl", "banana", "apple",
-                                             "sandwich", "orange", "broccoli", "carrot", "hot dog", "pizza", "donut", "cake", "chair", "couch",
-                                             "potted plant", "bed", "dining table", "toilet", "tv", "laptop", "mouse", "remote", "keyboard", "cell phone",
-                                             "microwave", "oven", "toaster", "sink", "refrigerator", "book", "clock", "vase", "scissors", "teddy bear",
-                                             "hair drier", "toothbrush" };
+const std::vector<std::string> classes = {"Gul 2X2", "Rød 2X2", "Grøn 2X2", "Rød 2X4", "Gul 2X3" };
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -66,13 +58,14 @@ void MainWindow::on_draw_rectangles_clicked()
 
 void MainWindow::on_load_image_clicked()
 {
-
+    ui->console->append("> Opening stream with URL: " + ui->uri->text());
+    RecreateVideoPlayer(ui->uri->text());
 }
 
 void MainWindow::on_load_model_clicked()
 {
     ui->console->append("> Loading neural model");
-    detector = std::make_unique<ObjectDetector>("../Assets/yolov5s-fp16.tflite", classes);
+    detector = std::make_unique<ObjectDetector>("../Assets/brikker.tflite", classes);
 }
 
 // NEURAL NETWORK STUFF

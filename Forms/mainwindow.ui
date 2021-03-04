@@ -106,6 +106,13 @@
            </widget>
           </item>
           <item>
+           <widget class="QPushButton" name="load_pieces">
+            <property name="text">
+             <string>Load pieces to Sim</string>
+            </property>
+           </widget>
+          </item>
+          <item>
            <widget class="QPushButton" name="draw_rectangles">
             <property name="text">
              <string>Sort Piece</string>
