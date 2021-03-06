@@ -189,14 +189,10 @@ void VideoPlayer::Decode_Stream()
              if (check) {
                  while (reading_buffer) {
                  }
-
                  writing_buffer = true;
-                 // We have succesfully decoded a frame
                  sws_scale(yuv420p_to_rgb24_ctx, yuv420p_frame->data, yuv420p_frame->linesize, 0, video_context->height, rgb24_frame->data, rgb24_frame->linesize);
                  writing_buffer = false;
 
-                 // Update sfml video image thing
-//                 std::cout << "Frame: " << frame_count << ", FPS: " << frame_count / (float)(std::chrono::duration_cast<std::chrono::seconds>(std::chrono::system_clock::now().time_since_epoch()).count() - time) << std::endl;
                  frame_count++;
              }
          }

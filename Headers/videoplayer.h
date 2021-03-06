@@ -10,7 +10,7 @@
 #include <QDateTime>
 #include <QTimer>
 
-// This is needed because MSVC is weird and requires you to explicitly link windows libraries
+// Link Windows libraries
 #pragma comment(lib, "wsock32")
 #pragma comment(lib, "ws2_32")
 #pragma comment(lib, "crypt32")
@@ -78,7 +78,7 @@ private:
     AVCodecContext* video_context;
     AVDictionary *d = nullptr;
 
-    SwsContext* yuv420p_to_rgb24_ctx; // This converts YUV420P to RGB24
+    SwsContext* yuv420p_to_rgb24_ctx; // Converts YUV420P to RGB24
 
     std::vector<uint8_t> yuv420p_picturebuffer;
     std::vector<uint8_t> rgb24_picturebuffer;
@@ -87,14 +87,13 @@ private:
     AVFrame* rgb24_frame;
 
     int frame_count = 0;
-    int video_stream_index = -1; // This is the index of the video within the h264 UDP stream
+    int video_stream_index = -1; // Index of video in stream
 
     std::thread t1;
     std::atomic_bool stop_thread = false;
 
     QVector2D video_size = { -1, -1 };
 
-    // A mutex could be used instead of this janky mess
     std::atomic_bool writing_buffer = true;
     std::atomic_bool reading_buffer = false;
 };
