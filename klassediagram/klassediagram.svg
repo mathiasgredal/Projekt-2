@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1218px" preserveAspectRatio="none" style="width:1421px;height:1218px;" version="1.1" viewBox="0 0 1421 1218" width="1421px" zoomAndPan="magnify"><defs><filter height="300%" id="fyjlyhs1rishp" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[8dd17ccd1ae0e0e4eb0a7117370c35f4]
+class QObject--><rect codeLine="2" fill="#FEFECE" filter="url(#fyjlyhs1rishp)" height="60.8906" id="QObject" style="stroke:#A80036;stroke-width:1.5;" width="75" x="743" y="7"/><ellipse cx="758" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M758.0469,29.2031 C759.5469,29.2031 760.7813,28.6406 761.6875,27.5781 L760.3125,26.0625 C759.7656,26.6563 759.1094,27.0469 758.3125,27.0469 C756.6406,27.0469 755.4844,25.7188 755.4844,23.4375 C755.4844,21.2188 756.6406,19.875 758.2031,19.875 C759.0156,19.875 759.6094,20.1875 760.1406,20.6719 L761.5156,19.125 C760.7656,18.3906 759.6094,17.7188 758.2031,17.7188 C755.25,17.7188 752.9219,19.8594 752.9219,23.5313 C752.9219,27.25 755.2969,29.2031 758.0469,29.2031 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="43" x="772" y="27.1016">QObject</text><line style="stroke:#A80036;stroke-width:1.5;" x1="744" x2="817" y1="39" y2="39"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="38" x="752" y="53.2051">From Qt</text><line style="stroke:#A80036;stroke-width:1.5;" x1="744" x2="817" y1="59.8906" y2="59.8906"/><!--MD5=[16d025dde850bca9df54fb6533f05466]
+class QMainWindow--><rect codeLine="6" fill="#FEFECE" filter="url(#fyjlyhs1rishp)" height="60.8906" id="QMainWindow" style="stroke:#A80036;stroke-width:1.5;" width="112" x="777.5" y="576"/><ellipse cx="792.5" cy="592" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M792.5469,598.2031 C794.0469,598.2031 795.2813,597.6406 796.1875,596.5781 L794.8125,595.0625 C794.2656,595.6563 793.6094,596.0469 792.8125,596.0469 C791.1406,596.0469 789.9844,594.7188 789.9844,592.4375 C789.9844,590.2188 791.1406,588.875 792.7031,588.875 C793.5156,588.875 794.1094,589.1875 794.6406,589.6719 L796.0156,588.125 C795.2656,587.3906 794.1094,586.7188 792.7031,586.7188 C789.75,586.7188 787.4219,588.8594 787.4219,592.5313 C787.4219,596.25 789.7969,598.2031 792.5469,598.2031 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="80" x="806.5" y="596.1016">QMainWindow</text><line style="stroke:#A80036;stroke-width:1.5;" x1="778.5" x2="888.5" y1="608" y2="608"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="38" x="786.5" y="622.2051">From Qt</text><line style="stroke:#A80036;stroke-width:1.5;" x1="778.5" x2="888.5" y1="628.8906" y2="628.8906"/><!--MD5=[3e3f16721f1fb369e45a968cb01568b2]
+class QWidget--><rect codeLine="10" fill="#FEFECE" filter="url(#fyjlyhs1rishp)" height="60.8906" id="QWidget" style="stroke:#A80036;stroke-width:1.5;" width="79" x="936" y="169"/><ellipse cx="951" cy="185" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M951.0469,191.2031 C952.5469,191.2031 953.7813,190.6406 954.6875,189.5781 L953.3125,188.0625 C952.7656,188.6563 952.1094,189.0469 951.3125,189.0469 C949.6406,189.0469 948.4844,187.7188 948.4844,185.4375 C948.4844,183.2188 949.6406,181.875 951.2031,181.875 C952.0156,181.875 952.6094,182.1875 953.1406,182.6719 L954.5156,181.125 C953.7656,180.3906 952.6094,179.7188 951.2031,179.7188 C948.25,179.7188 945.9219,181.8594 945.9219,185.5313 C945.9219,189.25 948.2969,191.2031 951.0469,191.2031 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="47" x="965" y="189.1016">QWidget</text><line style="stroke:#A80036;stroke-width:1.5;" x1="937" x2="1014" y1="201" y2="201"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="38" x="945" y="215.2051">From Qt</text><line style="stroke:#A80036;stroke-width:1.5;" x1="937" x2="1014" y1="221.8906" y2="221.8906"/><!--MD5=[e6c809820d88acc3564faeb20394ab9d]
+class MainWindow--><rect codeLine="14" fill="#FEFECE" filter="url(#fyjlyhs1rishp)" height="292.9219" id="MainWindow" style="stroke:#A80036;stroke-width:1.5;" width="230" x="631.5" y="912"/><ellipse cx="706.75" cy="928" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M706.7969,934.2031 C708.2969,934.2031 709.5313,933.6406 710.4375,932.5781 L709.0625,931.0625 C708.5156,931.6563 707.8594,932.0469 707.0625,932.0469 C705.3906,932.0469 704.2344,930.7188 704.2344,928.4375 C704.2344,926.2188 705.3906,924.875 706.9531,924.875 C707.7656,924.875 708.3594,925.1875 708.8906,925.6719 L710.2656,924.125 C709.5156,923.3906 708.3594,922.7188 706.9531,922.7188 C704,922.7188 701.6719,924.8594 701.6719,928.5313 C701.6719,932.25 704.0469,934.2031 706.7969,934.2031 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="71" x="727.25" y="932.1016">MainWindow</text><line style="stroke:#A80036;stroke-width:1.5;" x1="632.5" x2="860.5" y1="944" y2="944"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="639.5" y="952"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="104" x="651.5" y="958.2051">Ui::MainWindow *ui</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="639.5" y="964.8906"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="134" x="651.5" y="971.0957">ObjectDetector* detector</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="639.5" y="977.7813"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="146" x="651.5" y="983.9863">VideoPlayer* videoSurface</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="639.5" y="990.6719"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="122" x="651.5" y="996.877">IKSimulator* simulator</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="639.5" y="1003.5625"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="98" x="651.5" y="1009.7676">Qt3DWindow* view</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="639.5" y="1016.4531"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="91" x="651.5" y="1022.6582">QEntity *rootEntity</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="639.5" y="1029.3438"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="651.5" y="1035.5488">QWidget* viewContainer</text><line style="stroke:#A80036;stroke-width:1.5;" x1="632.5" x2="860.5" y1="1042.2344" y2="1042.2344"/><ellipse cx="642.5" cy="1053.2344" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="651.5" y="1056.4395">MainWindow(QWidget *parent)</text><ellipse cx="642.5" cy="1066.125" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="85" x="651.5" y="1069.3301">~MainWindow()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="0" x="654.5" y="1082.2207"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="639.5" y="1088.9063"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="161" x="651.5" y="1095.1113">on_draw_rectangles_clicked()</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="639.5" y="1101.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="136" x="651.5" y="1108.002">on_load_image_clicked()</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="639.5" y="1114.6875"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="136" x="651.5" y="1120.8926">on_load_model_clicked()</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="639.5" y="1127.5781"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="139" x="651.5" y="1133.7832">on_scan_image_clicked()</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="639.5" y="1140.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="145" x="651.5" y="1146.6738">on_applySettings_clicked()</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="639.5" y="1153.3594"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="204" x="651.5" y="1159.5645">void RecreateVideoPlayer(QString url)</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="639.5" y="1166.25"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="133" x="651.5" y="1172.4551">void DeleteVideoPlayer()</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="639.5" y="1179.1406"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="133" x="651.5" y="1185.3457">void PauseVideoPlayer()</text><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="639.5" y="1192.0313"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="123" x="651.5" y="1198.2363">void StartVideoPlayer()</text><!--MD5=[0c61ad0d60d7c0f8e246d9d763e3873a]
+class ObjectDetector--><rect codeLine="37" fill="#FEFECE" filter="url(#fyjlyhs1rishp)" height="241.3594" id="ObjectDetector" style="stroke:#A80036;stroke-width:1.5;" width="211" x="1196" y="486"/><ellipse cx="1257.75" cy="502" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1257.7969,508.2031 C1259.2969,508.2031 1260.5313,507.6406 1261.4375,506.5781 L1260.0625,505.0625 C1259.5156,505.6563 1258.8594,506.0469 1258.0625,506.0469 C1256.3906,506.0469 1255.2344,504.7188 1255.2344,502.4375 C1255.2344,500.2188 1256.3906,498.875 1257.9531,498.875 C1258.7656,498.875 1259.3594,499.1875 1259.8906,499.6719 L1261.2656,498.125 C1260.5156,497.3906 1259.3594,496.7188 1257.9531,496.7188 C1255,496.7188 1252.6719,498.8594 1252.6719,502.5313 C1252.6719,506.25 1255.0469,508.2031 1257.7969,508.2031 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="79" x="1278.25" y="506.1016">ObjectDetector</text><line style="stroke:#A80036;stroke-width:1.5;" x1="1197" x2="1406" y1="518" y2="518"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1204" y="526"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="47" x="1216" y="532.2051">thread t1</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1204" y="538.8906"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="81" x="1216" y="545.0957">int imageWidth</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1204" y="551.7813"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="86" x="1216" y="557.9863">int imageHeight</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1204" y="564.6719"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="1216" y="570.877">int imageChannels</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1204" y="577.5625"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="73" x="1216" y="583.7676">int numBoxes</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1204" y="590.4531"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="80" x="1216" y="596.6582">int dimensions</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1204" y="603.3438"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="141" x="1216" y="609.5488">const int confidenceIndex</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1204" y="616.2344"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="130" x="1216" y="622.4395">const int labelStartIndex</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1204" y="629.125"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="141" x="1216" y="635.3301">const float IOU_thresshold</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1204" y="642.0156"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="185" x="1216" y="648.2207">const float Confidence_thresshold</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="1204" y="654.9063"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="111" x="1216" y="661.1113">vector&lt;string&gt; labels</text><line style="stroke:#A80036;stroke-width:1.5;" x1="1197" x2="1406" y1="667.7969" y2="667.7969"/><ellipse cx="1207" cy="678.7969" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="98" x="1216" y="682.002">ObjectDetector(...)</text><ellipse cx="1207" cy="691.6875" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="153" x="1216" y="694.8926">void Predict(QImage image)</text><ellipse cx="1207" cy="704.5781" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="112" x="1216" y="707.7832">QSize GetInputSize()</text><ellipse cx="1207" cy="717.4688" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="147" x="1216" y="720.6738">void onFinishPrediction(...);</text><!--MD5=[8a7ecc224a37d54750f0b66ce020421f]
+class VideoPlayer--><rect codeLine="56" fill="#FEFECE" filter="url(#fyjlyhs1rishp)" height="524.9531" id="VideoPlayer" style="stroke:#A80036;stroke-width:1.5;" width="226" x="145.5" y="344"/><ellipse cx="222.25" cy="360" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M222.2969,366.2031 C223.7969,366.2031 225.0313,365.6406 225.9375,364.5781 L224.5625,363.0625 C224.0156,363.6563 223.3594,364.0469 222.5625,364.0469 C220.8906,364.0469 219.7344,362.7188 219.7344,360.4375 C219.7344,358.2188 220.8906,356.875 222.4531,356.875 C223.2656,356.875 223.8594,357.1875 224.3906,357.6719 L225.7656,356.125 C225.0156,355.3906 223.8594,354.7188 222.4531,354.7188 C219.5,354.7188 217.1719,356.8594 217.1719,360.5313 C217.1719,364.25 219.5469,366.2031 222.2969,366.2031 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="64" x="242.75" y="364.1016">VideoPlayer</text><line style="stroke:#A80036;stroke-width:1.5;" x1="146.5" x2="370.5" y1="376" y2="376"/><ellipse cx="156.5" cy="387" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="172" x="165.5" y="390.2051">Video_Connection_Status status</text><ellipse cx="156.5" cy="399.8906" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="104" x="165.5" y="403.0957">atomic_bool pause</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="0" x="168.5" y="415.9863"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="153.5" y="422.6719"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="76" x="165.5" y="428.877">QTimer *timer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="153.5" y="435.5625"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="125" x="165.5" y="441.7676">QGraphicsView *widget</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="153.5" y="448.4531"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="135" x="165.5" y="454.6582">QGraphicsScene* scene</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="153.5" y="461.3438"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="154" x="165.5" y="467.5488">QGraphicsPixmapItem* item</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="153.5" y="474.2344"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="85" x="165.5" y="480.4395">QPixmap buffer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="153.5" y="487.125"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="87" x="165.5" y="493.3301">QString videoUrl</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="0" x="168.5" y="506.2207"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="153.5" y="512.9063"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="181" x="165.5" y="519.1113">AVFormatContext* stream_context</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="153.5" y="525.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="92" x="165.5" y="532.002">AVPacket packet</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="153.5" y="538.6875"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="197" x="165.5" y="544.8926">AVFormatContext* allocation_context</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="153.5" y="551.5781"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="100" x="165.5" y="557.7832">AVStream* stream</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="153.5" y="564.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="92" x="165.5" y="570.6738">AVCodec* codec</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="153.5" y="577.3594"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="169" x="165.5" y="583.5645">AVCodecContext* video_context</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="153.5" y="590.25"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="83" x="165.5" y="596.4551">AVDictionary *d</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="153.5" y="603.1406"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="181" x="165.5" y="609.3457">SwsContext* yuv420p_to_rgb24_ctx</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="153.5" y="616.0313"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="200" x="165.5" y="622.2363">vector&lt;uint8_t&gt; yuv420p_picturebuffer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="153.5" y="628.9219"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="188" x="165.5" y="635.127">vector&lt;uint8_t&gt; rgb24_picturebuffer</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="153.5" y="641.8125"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="137" x="165.5" y="648.0176">AVFrame* yuv420p_frame</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="153.5" y="654.7031"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="125" x="165.5" y="660.9082">AVFrame* rgb24_frame</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="0" x="168.5" y="673.7988"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="153.5" y="680.4844"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="85" x="165.5" y="686.6895">int frame_count</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="153.5" y="693.375"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="122" x="165.5" y="699.5801">int video_stream_index</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="153.5" y="706.2656"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="47" x="165.5" y="712.4707">thread t1</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="153.5" y="719.1563"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="133" x="165.5" y="725.3613">atomic_bool stop_thread</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="153.5" y="732.0469"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="116" x="165.5" y="738.252">QVector2D video_size</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="153.5" y="744.9375"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="146" x="165.5" y="751.1426">atomic_bool writing_buffer;</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="153.5" y="757.8281"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="153" x="165.5" y="764.0332">atomic_bool reading_buffer;</text><line style="stroke:#A80036;stroke-width:1.5;" x1="146.5" x2="370.5" y1="770.7188" y2="770.7188"/><ellipse cx="156.5" cy="781.7188" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="82" x="165.5" y="784.9238">VideoPlayer(...)</text><ellipse cx="156.5" cy="794.6094" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="81" x="165.5" y="797.8145">~VideoPlayer()</text><ellipse cx="156.5" cy="807.5" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="121" x="165.5" y="810.7051">void Decode_Stream()</text><ellipse cx="156.5" cy="820.3906" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="165.5" y="823.5957">QVector2D Video_Size()</text><ellipse cx="156.5" cy="833.2813" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="145" x="165.5" y="836.4863">QImage getCurrentImage()</text><ellipse cx="156.5" cy="846.1719" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="83" x="165.5" y="849.377">QString getUrl()</text><ellipse cx="156.5" cy="859.0625" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="165.5" y="862.2676">void updateVideo()</text><!--MD5=[111e859d68f7ad0336897d65c44780d2]
+class IKSimulator--><rect codeLine="96" fill="#FEFECE" filter="url(#fyjlyhs1rishp)" height="550.7344" id="IKSimulator" style="stroke:#A80036;stroke-width:1.5;" width="275" x="440" y="331"/><ellipse cx="541.75" cy="347" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M541.7969,353.2031 C543.2969,353.2031 544.5313,352.6406 545.4375,351.5781 L544.0625,350.0625 C543.5156,350.6563 542.8594,351.0469 542.0625,351.0469 C540.3906,351.0469 539.2344,349.7188 539.2344,347.4375 C539.2344,345.2188 540.3906,343.875 541.9531,343.875 C542.7656,343.875 543.3594,344.1875 543.8906,344.6719 L545.2656,343.125 C544.5156,342.3906 543.3594,341.7188 541.9531,341.7188 C539,341.7188 536.6719,343.8594 536.6719,347.5313 C536.6719,351.25 539.0469,353.2031 541.7969,353.2031 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="63" x="562.25" y="351.1016">IKSimulator</text><line style="stroke:#A80036;stroke-width:1.5;" x1="441" x2="714" y1="363" y2="363"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="371"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="98" x="460" y="377.2051">Qt3DWindow* view</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="383.8906"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="91" x="460" y="390.0957">QEntity* rootEntity</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="396.7813"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="129" x="460" y="402.9863">QCamera* cameraEntity</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="409.6719"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="249" x="460" y="415.877">QFirstPersonCameraController* camController</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="422.5625"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="93" x="460" y="428.7676">QEntity* lightEntity</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="435.4531"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="93" x="460" y="441.6582">QPointLight* light</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="448.3438"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="153" x="460" y="454.5488">QTransform* lightTransform</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="461.2344"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="101" x="460" y="467.4395">QEntity* robotBase;</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="474.125"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="117" x="460" y="480.3301">QEntity* groundPlane;</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="487.0156"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="189" x="460" y="493.2207">vector&lt;TargetPiece*&gt; targetPieces</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="499.9063"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="175" x="460" y="506.1113">vector&lt;Destination&gt; destinations</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="512.7969"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="124" x="460" y="519.002">QEntity* segment1Entity</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="525.6875"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="168" x="460" y="531.8926">QCuboidMesh* segment1Mesh</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="538.5781"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="184" x="460" y="544.7832">QTransform* segment1Transform</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="551.4688"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="124" x="460" y="557.6738">QEntity* segment2Entity</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="564.3594"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="168" x="460" y="570.5645">QCuboidMesh* segment2Mesh</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="577.25"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="184" x="460" y="583.4551">QTransform* segment2Transform</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="590.1406"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="118" x="460" y="596.3457">float segment1Length</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="603.0313"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="118" x="460" y="609.2363">float segment2Length</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="615.9219"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="98" x="460" y="622.127">float baseRotation</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="628.8125"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="100" x="460" y="635.0176">float joint1Rotation</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="641.7031"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="100" x="460" y="647.9082">float joint2Rotation</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="654.5938"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="157" x="460" y="660.7988">const QVector3D restPosition</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="667.4844"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="145" x="460" y="673.6895">QVector3D armEndeffector</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="680.375"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="101" x="460" y="686.5801">SortState sortState</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="693.2656"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="147" x="460" y="699.4707">TargetPiece* sortingTarget</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="706.1563"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="134" x="460" y="712.3613">float movementProgress</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="719.0469"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="143" x="460" y="725.252">QVector3D movementStart</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="731.9375"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="143" x="460" y="738.1426">QVector3D movementPath</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="744.8281"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="85" x="460" y="751.0332">float armSpeed</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="757.7188"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="76" x="460" y="763.9238">QTimer* timer</text><line style="stroke:#A80036;stroke-width:1.5;" x1="441" x2="714" y1="770.6094" y2="770.6094"/><ellipse cx="451" cy="781.6094" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="80" x="460" y="784.8145">IKSimulator(...)</text><ellipse cx="451" cy="794.5" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="79" x="460" y="797.7051">~IKSimulator()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="0" x="463" y="810.5957"/><ellipse cx="451" cy="820.2813" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="124" x="460" y="823.4863">void setArmPosition(...)</text><ellipse cx="451" cy="833.1719" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="198" x="460" y="836.377">void IKSolve(QVector3D endPosition)</text><ellipse cx="451" cy="846.0625" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="87" x="460" y="849.2676">void SortPiece()</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="0" x="463" y="862.1582"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="448" y="868.8438"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="85" x="460" y="875.0488">void moveArm()</text><!--MD5=[5186ef3305e0cbe09d8c16bd8b21be36]
+class Ui_MainWindow--><rect codeLine="138" fill="#FEFECE" filter="url(#fyjlyhs1rishp)" height="60.8906" id="Ui_MainWindow" style="stroke:#A80036;stroke-width:1.5;" width="119" x="492" y="1028"/><ellipse cx="507" cy="1044" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M507.0469,1050.2031 C508.5469,1050.2031 509.7813,1049.6406 510.6875,1048.5781 L509.3125,1047.0625 C508.7656,1047.6563 508.1094,1048.0469 507.3125,1048.0469 C505.6406,1048.0469 504.4844,1046.7188 504.4844,1044.4375 C504.4844,1042.2188 505.6406,1040.875 507.2031,1040.875 C508.0156,1040.875 508.6094,1041.1875 509.1406,1041.6719 L510.5156,1040.125 C509.7656,1039.3906 508.6094,1038.7188 507.2031,1038.7188 C504.25,1038.7188 501.9219,1040.8594 501.9219,1044.5313 C501.9219,1048.25 504.2969,1050.2031 507.0469,1050.2031 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="87" x="521" y="1048.1016">Ui_MainWindow</text><line style="stroke:#A80036;stroke-width:1.5;" x1="493" x2="610" y1="1060" y2="1060"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacing" textLength="74" x="501" y="1074.2051">Auto generated</text><line style="stroke:#A80036;stroke-width:1.5;" x1="493" x2="610" y1="1080.8906" y2="1080.8906"/><!--MD5=[eb37c90bbeb1eb2448fbedfdee3a53f2]
+class PredictionVisualizer--><rect codeLine="142" fill="#FEFECE" filter="url(#fyjlyhs1rishp)" height="138.2344" id="PredictionVisualizer" style="stroke:#A80036;stroke-width:1.5;" width="266" x="909.5" y="537.5"/><ellipse cx="983.75" cy="553.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M983.7969,559.7031 C985.2969,559.7031 986.5313,559.1406 987.4375,558.0781 L986.0625,556.5625 C985.5156,557.1563 984.8594,557.5469 984.0625,557.5469 C982.3906,557.5469 981.2344,556.2188 981.2344,553.9375 C981.2344,551.7188 982.3906,550.375 983.9531,550.375 C984.7656,550.375 985.3594,550.6875 985.8906,551.1719 L987.2656,549.625 C986.5156,548.8906 985.3594,548.2188 983.9531,548.2188 C981,548.2188 978.6719,550.3594 978.6719,554.0313 C978.6719,557.75 981.0469,559.7031 983.7969,559.7031 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="109" x="1004.25" y="557.6016">PredictionVisualizer</text><line style="stroke:#A80036;stroke-width:1.5;" x1="910.5" x2="1174.5" y1="569.5" y2="569.5"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="917.5" y="577.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="147" x="929.5" y="583.7051">QImage backgroundImage</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="917.5" y="590.3906"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="165" x="929.5" y="596.5957">vector&lt;Prediction&gt; predictions</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="917.5" y="603.2813"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="90" x="929.5" y="609.4863">QSize targetSize</text><line style="stroke:#A80036;stroke-width:1.5;" x1="910.5" x2="1174.5" y1="616.1719" y2="616.1719"/><ellipse cx="920.5" cy="627.1719" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="205" x="929.5" y="630.377">PredictionVisualizer(QWidget *parent)</text><ellipse cx="920.5" cy="640.0625" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="147" x="929.5" y="643.2676">void VisualizePrediction(...)</text><polygon fill="#FFFF44" points="920.5,647.9531,924.5,651.9531,920.5,655.9531,916.5,651.9531" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="240" x="929.5" y="656.1582">void mousePressEvent(QMouseEvent *event)</text><polygon fill="#FFFF44" points="920.5,660.8438,924.5,664.8438,920.5,668.8438,916.5,664.8438" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="189" x="929.5" y="669.0488">void paintEvent(QPaintEvent *event)</text><!--MD5=[29d97757aeb1cc9a527f0193b8e36406]
+class TargetPiece--><rect codeLine="153" fill="#FEFECE" filter="url(#fyjlyhs1rishp)" height="202.6875" id="TargetPiece" style="stroke:#A80036;stroke-width:1.5;" width="252" x="240.5" y="98"/><ellipse cx="329.75" cy="114" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M329.7969,120.2031 C331.2969,120.2031 332.5313,119.6406 333.4375,118.5781 L332.0625,117.0625 C331.5156,117.6563 330.8594,118.0469 330.0625,118.0469 C328.3906,118.0469 327.2344,116.7188 327.2344,114.4375 C327.2344,112.2188 328.3906,110.875 329.9531,110.875 C330.7656,110.875 331.3594,111.1875 331.8906,111.6719 L333.2656,110.125 C332.5156,109.3906 331.3594,108.7188 329.9531,108.7188 C327,108.7188 324.6719,110.8594 324.6719,114.5313 C324.6719,118.25 327.0469,120.2031 329.7969,120.2031 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="65" x="350.25" y="118.1016">TargetPiece</text><line style="stroke:#A80036;stroke-width:1.5;" x1="241.5" x2="491.5" y1="130" y2="130"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="248.5" y="138"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="94" x="260.5" y="144.2051">QEntity* rootEntity;</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="248.5" y="150.8906"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="104" x="260.5" y="157.0957">QEntity* targetEntity;</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="248.5" y="163.7813"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="148" x="260.5" y="169.9863">QCuboidMesh* targetMesh;</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="248.5" y="176.6719"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="164" x="260.5" y="182.877">QTransform* targetTransform;</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="248.5" y="189.5625"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="100" x="260.5" y="195.7676">QString targetType</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="248.5" y="202.4531"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="103" x="260.5" y="208.6582">QVector3D position</text><line style="stroke:#A80036;stroke-width:1.5;" x1="241.5" x2="491.5" y1="215.3438" y2="215.3438"/><ellipse cx="251.5" cy="226.3438" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="84" x="260.5" y="229.5488">TargetPiece(...)</text><ellipse cx="251.5" cy="239.2344" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="83" x="260.5" y="242.4395">~TargetPiece()</text><ellipse cx="251.5" cy="252.125" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="130" x="260.5" y="255.3301">QEntity *getTargetEntity()</text><ellipse cx="251.5" cy="265.0156" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="129" x="260.5" y="268.2207">QVector3D getPosition()</text><ellipse cx="251.5" cy="277.9063" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="226" x="260.5" y="281.1113">void setPosition(const QVector3D &amp;value);</text><ellipse cx="251.5" cy="290.7969" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="129" x="260.5" y="294.002">QString getTargetType()</text><!--MD5=[18a836c23c0e4d04592ec32f5657da5f]
+class Destination--><rect codeLine="169" fill="#FEFECE" filter="url(#fyjlyhs1rishp)" height="79.9063" id="Destination" style="stroke:#A80036;stroke-width:1.5;" width="129" x="513" y="159.5"/><ellipse cx="543.3" cy="178.5625" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M543.3469,184.7656 C544.8469,184.7656 546.0813,184.2031 546.9875,183.1406 L545.6125,181.625 C545.0656,182.2188 544.4094,182.6094 543.6125,182.6094 C541.9406,182.6094 540.7844,181.2813 540.7844,179 C540.7844,176.7813 541.9406,175.4375 543.5031,175.4375 C544.3156,175.4375 544.9094,175.75 545.4406,176.2344 L546.8156,174.6875 C546.0656,173.9531 544.9094,173.2813 543.5031,173.2813 C540.55,173.2813 538.2219,175.4219 538.2219,179.0938 C538.2219,182.8125 540.5969,184.7656 543.3469,184.7656 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="570.7" y="175.6328">«Struct»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="63" x="560.7" y="189.6953">Destination</text><line style="stroke:#A80036;stroke-width:1.5;" x1="514" x2="641" y1="197.625" y2="197.625"/><ellipse cx="524" cy="208.625" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="75" x="533" y="211.8301">QString name</text><ellipse cx="524" cy="221.5156" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="103" x="533" y="224.7207">QVector3D position</text><line style="stroke:#A80036;stroke-width:1.5;" x1="514" x2="641" y1="231.4063" y2="231.4063"/><!--MD5=[f25434ef06b780b50834fe038960862c]
+class Prediction--><rect codeLine="175" fill="#FEFECE" filter="url(#fyjlyhs1rishp)" height="105.6875" id="Prediction" style="stroke:#A80036;stroke-width:1.5;" width="164" x="1053.5" y="146.5"/><ellipse cx="1104.25" cy="165.5625" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M1104.2969,171.7656 C1105.7969,171.7656 1107.0313,171.2031 1107.9375,170.1406 L1106.5625,168.625 C1106.0156,169.2188 1105.3594,169.6094 1104.5625,169.6094 C1102.8906,169.6094 1101.7344,168.2813 1101.7344,166 C1101.7344,163.7813 1102.8906,162.4375 1104.4531,162.4375 C1105.2656,162.4375 1105.8594,162.75 1106.3906,163.2344 L1107.7656,161.6875 C1107.0156,160.9531 1105.8594,160.2813 1104.4531,160.2813 C1101.5,160.2813 1099.1719,162.4219 1099.1719,166.0938 C1099.1719,169.8125 1101.5469,171.7656 1104.2969,171.7656 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="1130.25" y="162.6328">«Struct»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="54" x="1124.75" y="176.6953">Prediction</text><line style="stroke:#A80036;stroke-width:1.5;" x1="1054.5" x2="1216.5" y1="184.625" y2="184.625"/><ellipse cx="1064.5" cy="195.625" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="67" x="1073.5" y="198.8301">QRectF bbox</text><ellipse cx="1064.5" cy="208.5156" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="90" x="1073.5" y="211.7207">float confidence</text><ellipse cx="1064.5" cy="221.4063" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="138" x="1073.5" y="224.6113">vector&lt;float&gt; labelScores</text><ellipse cx="1064.5" cy="234.2969" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="60" x="1073.5" y="237.502">string label</text><line style="stroke:#A80036;stroke-width:1.5;" x1="1054.5" x2="1216.5" y1="244.1875" y2="244.1875"/><!--MD5=[af8138edb8564d4748db8fb59ddc51ee]
+class SortState--><rect codeLine="182" fill="#FEFECE" filter="url(#fyjlyhs1rishp)" height="99.5625" id="SortState" style="stroke:#A80036;stroke-width:1.5;" width="87" x="662" y="149.5"/><ellipse cx="679.25" cy="165.5" fill="#EB937F" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M675.3125,171.5 L682.8281,171.5 L682.8281,169.3906 L677.8281,169.3906 L677.8281,166.8438 L681.9219,166.8438 L681.9219,164.75 L677.8281,164.75 L677.8281,162.5313 L682.6563,162.5313 L682.6563,160.4219 L675.3125,160.4219 L675.3125,171.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="50" x="693.75" y="169.6016">SortState</text><line style="stroke:#A80036;stroke-width:1.5;" x1="663" x2="748" y1="181.5" y2="181.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="29" x="668" y="195.7051">None</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="46" x="668" y="208.5957">ToPiece</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="75" x="668" y="221.4863">ToDestination</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="37" x="668" y="234.377">ToRest</text><line style="stroke:#A80036;stroke-width:1.5;" x1="663" x2="748" y1="241.0625" y2="241.0625"/><!--MD5=[34df84d2a9808f8a752a97a2fdce7cf9]
+class Video_Connection_Status--><rect codeLine="189" fill="#FEFECE" filter="url(#fyjlyhs1rishp)" height="86.6719" id="Video_Connection_Status" style="stroke:#A80036;stroke-width:1.5;" width="171" x="7" y="156"/><ellipse cx="22" cy="172" fill="#EB937F" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M18.0625,178 L25.5781,178 L25.5781,175.8906 L20.5781,175.8906 L20.5781,173.3438 L24.6719,173.3438 L24.6719,171.25 L20.5781,171.25 L20.5781,169.0313 L25.4063,169.0313 L25.4063,166.9219 L18.0625,166.9219 L18.0625,178 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="139" x="36" y="176.1016">Video_Connection_Status</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="177" y1="188" y2="188"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="76" x="13" y="202.2051">Disconnected</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="62" x="13" y="215.0957">Connecting</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="59" x="13" y="227.9863">Connected</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="177" y1="234.6719" y2="234.6719"/><!--MD5=[b981cb5cef7ac4c00a51aa1ee2cdfd64]
+class Qt3DWindow--><rect fill="#FEFECE" filter="url(#fyjlyhs1rishp)" height="48" id="Qt3DWindow" style="stroke:#A80036;stroke-width:1.5;" width="104" x="811.5" y="175.5"/><ellipse cx="826.5" cy="191.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M826.5469,197.7031 C828.0469,197.7031 829.2813,197.1406 830.1875,196.0781 L828.8125,194.5625 C828.2656,195.1563 827.6094,195.5469 826.8125,195.5469 C825.1406,195.5469 823.9844,194.2188 823.9844,191.9375 C823.9844,189.7188 825.1406,188.375 826.7031,188.375 C827.5156,188.375 828.1094,188.6875 828.6406,189.1719 L830.0156,187.625 C829.2656,186.8906 828.1094,186.2188 826.7031,186.2188 C823.75,186.2188 821.4219,188.3594 821.4219,192.0313 C821.4219,195.75 823.7969,197.7031 826.5469,197.7031 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="72" x="840.5" y="195.6016">Qt3DWindow</text><line style="stroke:#A80036;stroke-width:1.5;" x1="812.5" x2="914.5" y1="207.5" y2="207.5"/><line style="stroke:#A80036;stroke-width:1.5;" x1="812.5" x2="914.5" y1="215.5" y2="215.5"/><!--MD5=[b03e76794b784a334e12945593ecc50f]
+reverse link QWidget to QMainWindow--><path d="M954.71,248.4 C946.5,265.53 936.42,284.62 925.5,301 C915.71,315.68 907.57,315.31 899.5,331 C857.13,413.38 841.35,523.74 835.99,575.86 " fill="none" id="QWidget-backto-QMainWindow" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="948.39,245.39,963.13,230.16,961.1,251.26,948.39,245.39" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[7096410ca6ae9a6913f390d636e3788b]
+reverse link QObject to QWidget--><path d="M837.76,51.64 C866.84,60.7 901.09,75.3 925.5,98 C946.05,117.11 959.3,146.52 966.96,168.6 " fill="none" id="QObject-backto-QWidget" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="835.52,58.28,818.17,46.11,839.32,44.81,835.52,58.28" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6d49110face5b86f7a663104a5736814]
+reverse link QMainWindow to MainWindow--><path d="M819.13,656.54 C804.92,717.38 783.61,823.84 767.6,911.78 " fill="none" id="QMainWindow-backto-MainWindow" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="812.34,654.83,823.84,637.03,825.95,658.11,812.34,654.83" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a71180dcc24a8a000d119ade0bd3c48b]
+link QMainWindow to MainWindow--><!--MD5=[14ca6ecee3f1b672d63d5387aefe14b2]
+reverse link QObject to ObjectDetector--><path d="M838.36,37.89 C946.61,38.04 1173.7,44.87 1227.5,98 C1328.47,197.72 1332.4,369.97 1320.98,485.8 " fill="none" id="QObject-backto-ObjectDetector" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="838.09,44.89,818.08,37.94,838.06,30.89,838.09,44.89" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[9d43bfb91778bf104d1ca07e93d0dbe3]
+reverse link QObject to VideoPlayer--><path d="M722.63,40.47 C588.05,45.66 262.97,61.83 230.5,98 C197.01,135.31 198.77,239.47 211.08,343.8 " fill="none" id="QObject-backto-VideoPlayer" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="722.64,33.47,742.89,39.72,723.16,47.46,722.64,33.47" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[9b77e6eee5d09be140ab894a681acabe]
+reverse link QObject to IKSimulator--><path d="M786.17,88.32 C790.22,143.12 790.3,232.49 758.5,301 C750.56,318.1 739.82,315.92 728.5,331 C724.01,336.98 719.56,343.11 715.17,349.36 " fill="none" id="QObject-backto-IKSimulator" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="779.17,88.66,784.37,68.12,793.11,87.42,779.17,88.66" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6172493415b588b110927958422e1e07]
+reverse link QWidget to PredictionVisualizer--><path d="M983.71,250.12 C995.63,322.18 1017.77,456.03 1031.22,537.31 " fill="none" id="QWidget-backto-PredictionVisualizer" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="976.78,251.15,980.43,230.28,990.6,248.87,976.78,251.15" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[4c466b478b87497018b92b0878507919]
+reverse link QObject to TargetPiece--><path d="M722.87,43.64 C665.04,50.42 574.47,65.55 502.5,98 C499.29,99.45 496.08,100.98 492.88,102.59 " fill="none" id="QObject-backto-TargetPiece" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="722.32,36.65,742.96,41.46,723.83,50.57,722.32,36.65" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6d139c9fbbf21d657b04a974992b9ffc]
+link Ui_MainWindow to MainWindow--><path codeLine="197" d="M611.29,1077.95 C613.59,1078.37 615.89,1078.75 618.19,1079.09 " fill="none" id="Ui_MainWindow-to-MainWindow" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="631.36,1080.63,625.8616,1075.9645,619.4401,1079.2455,624.9386,1083.911,631.36,1080.63" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[c9cc6aae41808c4526d60f63f7cfa83d]
+link MainWindow to Ui_MainWindow--><!--MD5=[2e9a3de28c92ea3b98f96943d81fb300]
+link ObjectDetector to MainWindow--><path codeLine="198" d="M1273.47,727.33 C1255.82,780.46 1228.07,840.25 1185.5,882 C1100.53,965.33 970.99,1010.56 874.62,1034.12 " fill="none" id="ObjectDetector-to-MainWindow" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="861.85,1037.17,868.6141,1039.6694,873.5228,1034.387,866.7587,1031.8876,861.85,1037.17" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b842acca37df28eeaffac17848150510]
+link VideoPlayer to MainWindow--><path codeLine="199" d="M371.72,830.14 C388.86,849.94 408.08,867.82 429.5,882 C497.79,927.21 541.15,875.63 619.47,912.41 " fill="none" id="VideoPlayer-to-MainWindow" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="631.29,918.51,627.7926,912.2038,620.6264,913.0066,624.1237,919.3129,631.29,918.51" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[5fa43dcb4231ad352b56ec9a6f23f311]
+link IKSimulator to MainWindow--><path codeLine="200" d="M673.34,882.23 C675.57,888.05 677.78,893.82 679.98,899.53 " fill="none" id="IKSimulator-to-MainWindow" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="684.76,911.92,686.329,904.8817,680.4355,900.7263,678.8665,907.7647,684.76,911.92" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[5fa43dcb4231ad352b56ec9a6f23f311]
+link IKSimulator to MainWindow--><!--MD5=[3e30a324bf5c3b8ba1dab1fb8636c045]
+link Qt3DWindow to MainWindow--><path codeLine="201" d="M849.72,223.67 C836.89,244.59 816.76,275.85 796.5,301 C784.86,315.44 774.7,313.91 767.5,331 C725.96,429.61 730.24,716.4 737.87,898.77 " fill="none" id="Qt3DWindow-to-MainWindow" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="738.43,911.99,742.1691,905.8241,737.9156,900.001,734.1765,906.167,738.43,911.99" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[c0904d87db8d2f3384854d970f4b53e8]
+link Qt3DWindow to IKSimulator--><path codeLine="202" d="M852.87,223.55 C841.59,245.86 821.9,279.4 796.5,301 C771.95,321.87 754.2,309.17 730.5,331 C728.54,332.8 726.61,334.64 724.69,336.5 " fill="none" id="Qt3DWindow-to-IKSimulator" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="715.26,346.04,722.3221,344.5818,723.6923,337.5021,716.6302,338.9603,715.26,346.04" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[f02ac5a0265ab576f7765f8933da59fd]
+reverse link Prediction to PredictionVisualizer--><path codeLine="204" d="M1118.95,272.58 C1101.74,347.53 1075.01,463.94 1058.14,537.38 " fill="none" id="Prediction-backto-PredictionVisualizer" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="1112.23,270.54,1123.53,252.62,1125.88,273.68,1112.23,270.54" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[74eba0d5e30b4d1823aeb17caf67ece7]
+reverse link Prediction to ObjectDetector--><path codeLine="205" d="M1164.48,271.2 C1188.69,330.28 1223.75,415.82 1252.35,485.58 " fill="none" id="Prediction-backto-ObjectDetector" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="1157.97,273.78,1156.86,252.62,1170.92,268.47,1157.97,273.78" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[ff581d8a4fc0a1a5881d706fe97527a8]
+reverse link Video_Connection_Status to VideoPlayer--><path codeLine="207" d="M117.63,261.81 C127.18,285.11 138.76,313.37 151.14,343.57 " fill="none" id="Video_Connection_Status-backto-VideoPlayer" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="111.06,264.24,109.95,243.08,124.01,258.93,111.06,264.24" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[7b28e75f135dfb3be7699810025983b3]
+reverse link SortState to IKSimulator--><path codeLine="209" d="M683.86,268.97 C678.04,287.37 671.38,308.46 664.29,330.9 " fill="none" id="SortState-backto-IKSimulator" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="677.23,266.72,689.93,249.76,690.58,270.94,677.23,266.72" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[26ad665e74256285831340023d16df99]
+reverse link TargetPiece to IKSimulator--><path codeLine="210" d="M428.19,318.91 C432,326.22 435.9,333.71 439.87,341.33 " fill="none" id="TargetPiece-backto-IKSimulator" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="421.96,322.1,418.93,301.13,434.38,315.64,421.96,322.1" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a13391b7e351912f02a90d6d020c67c4]
+reverse link Destination to IKSimulator--><path codeLine="211" d="M577.5,259.77 C577.5,280.14 577.5,304.47 577.5,330.65 " fill="none" id="Destination-backto-IKSimulator" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="570.5,259.7,577.5,239.7,584.5,259.7,570.5,259.7" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[11f7f6128bfea426c4a9e7a40bd5545c]
+link VideoPlayer to IKSimulator--><!--MD5=[9e3e866584fba184268e52e048ea13ba]
+@startuml klassediagram
+
+class QObject {
+    // From Qt //
+}
+
+class QMainWindow extends QWidget {
+    // From Qt //
+}
+
+class QWidget extends QObject {
+    // From Qt //
+}
+
+class MainWindow extends QMainWindow{
+    +MainWindow(QWidget *parent)
+    +~MainWindow()
+
+    -on_draw_rectangles_clicked()
+    -on_load_image_clicked()
+    -on_load_model_clicked()
+    -on_scan_image_clicked()
+    -on_applySettings_clicked()
+
+    -Ui::MainWindow *ui
+    -ObjectDetector* detector
+    -VideoPlayer* videoSurface
+    -void RecreateVideoPlayer(QString url)
+    -void DeleteVideoPlayer()
+    -void PauseVideoPlayer()
+    -void StartVideoPlayer()
+    -IKSimulator* simulator
+    -Qt3DWindow* view
+    -QEntity *rootEntity
+    -QWidget* viewContainer
+}
+
+class ObjectDetector extends QObject{
+    +ObjectDetector(...)
+    +void Predict(QImage image)
+    +QSize GetInputSize()
+    +void onFinishPrediction(...);
+
+    -thread t1
+    -int imageWidth
+    -int imageHeight
+    -int imageChannels
+    -int numBoxes
+    -int dimensions
+    -const int confidenceIndex
+    -const int labelStartIndex
+    -const float IOU_thresshold
+    -const float Confidence_thresshold
+    -vector<string> labels
+}
+
+class VideoPlayer extends QObject{
+    +VideoPlayer(...)
+    +~VideoPlayer()
+    +void Decode_Stream()
+    +QVector2D Video_Size()
+    +QImage getCurrentImage()
+    +QString getUrl()
+    +Video_Connection_Status status
+    +atomic_bool pause
+    +void updateVideo()
+
+    -QTimer *timer
+    -QGraphicsView *widget
+    -QGraphicsScene* scene
+    -QGraphicsPixmapItem* item
+    -QPixmap buffer
+    -QString videoUrl
+
+    -AVFormatContext* stream_context
+    -AVPacket packet
+    -AVFormatContext* allocation_context
+    -AVStream* stream
+    -AVCodec* codec
+    -AVCodecContext* video_context
+    -AVDictionary *d
+    -SwsContext* yuv420p_to_rgb24_ctx
+    -vector<uint8_t> yuv420p_picturebuffer
+    -vector<uint8_t> rgb24_picturebuffer
+    -AVFrame* yuv420p_frame
+    -AVFrame* rgb24_frame
+
+    -int frame_count
+    -int video_stream_index
+    -thread t1
+    -atomic_bool stop_thread
+    -QVector2D video_size
+    -atomic_bool writing_buffer;
+    -atomic_bool reading_buffer;
+}
+
+class IKSimulator extends QObject{
+    +IKSimulator(...)
+    +~IKSimulator()
+
+    +void setArmPosition(...)
+    +void IKSolve(QVector3D endPosition)
+    +void SortPiece()
+
+    -void moveArm()
+    -Qt3DWindow* view
+    -QEntity* rootEntity
+    -QCamera* cameraEntity
+    -QFirstPersonCameraController* camController
+    -QEntity* lightEntity
+    -QPointLight* light
+    -QTransform* lightTransform
+    -QEntity* robotBase;
+    -QEntity* groundPlane;
+    -vector<TargetPiece*> targetPieces
+    -vector<Destination> destinations
+    -QEntity* segment1Entity
+    -QCuboidMesh* segment1Mesh
+    -QTransform* segment1Transform
+    -QEntity* segment2Entity
+    -QCuboidMesh* segment2Mesh
+    -QTransform* segment2Transform
+    -float segment1Length
+    -float segment2Length
+    -float baseRotation
+    -float joint1Rotation
+    -float joint2Rotation
+    -const QVector3D restPosition
+    -QVector3D armEndeffector
+    -SortState sortState
+    -TargetPiece* sortingTarget
+    -float movementProgress
+    -QVector3D movementStart
+    -QVector3D movementPath
+    -float armSpeed
+    -QTimer* timer
+}
+
+class Ui_MainWindow {
+    // Auto generated //
+}
+
+class PredictionVisualizer extends QWidget{
+    +PredictionVisualizer(QWidget *parent)
+    +void VisualizePrediction(...)
+    #void mousePressEvent(QMouseEvent *event)
+    #void paintEvent(QPaintEvent *event)
+
+    -QImage backgroundImage
+    -vector<Prediction> predictions
+    -QSize targetSize
+}
+
+class TargetPiece extends QObject {
+    +TargetPiece(...)
+    +~TargetPiece()
+    +QEntity *getTargetEntity()
+    +QVector3D getPosition()
+    +void setPosition(const QVector3D &value);
+    +QString getTargetType()
+
+    -QEntity* rootEntity;
+    -QEntity* targetEntity;
+    -QCuboidMesh* targetMesh;
+    -QTransform* targetTransform;
+    -QString targetType
+    -QVector3D position
+}
+
+class Destination <<Struct>> {
+    +QString name
+    +QVector3D position
+}
+
+
+class Prediction <<Struct>> {
+    +QRectF bbox
+    +float confidence
+    +vector<float> labelScores
+    +string label
+}
+
+enum SortState {
+    None
+    ToPiece
+    ToDestination
+    ToRest
+}
+
+enum Video_Connection_Status {
+    Disconnected
+    Connecting
+    Connected
+}
+
+
+' Connections
+Ui_MainWindow - -o MainWindow
+ObjectDetector - -* MainWindow
+VideoPlayer - -* MainWindow
+IKSimulator - -* MainWindow
+Qt3DWindow - -o MainWindow
+Qt3DWindow - -o IKSimulator
+
+Prediction <|- - PredictionVisualizer
+Prediction <|- - ObjectDetector
+
+Video_Connection_Status <|- - VideoPlayer
+
+SortState <|- - IKSimulator
+TargetPiece <|- - IKSimulator
+Destination <|- - IKSimulator
+
+IKSimulator -[hidden]> MainWindow
+MainWindow -[hidden]> Ui_MainWindow
+VideoPlayer -[hidden]> IKSimulator
+QMainWindow -[hidden]-> MainWindow
+' ObjectDetector -[hidden]-> MainWindow
+' PredictionVisualizer -[hidden]-> MainWindow
+' TargetPiece -[hidden]-> QMainWindow
+
+
+
+skinparam nodesep 20
+skinparam ranksep 30
+
+
+@enduml
+
+@startuml klassediagram
+
+class QObject {
+    // From Qt //
+}
+
+class QMainWindow extends QWidget {
+    // From Qt //
+}
+
+class QWidget extends QObject {
+    // From Qt //
+}
+
+class MainWindow extends QMainWindow{
+    +MainWindow(QWidget *parent)
+    +~MainWindow()
+
+    -on_draw_rectangles_clicked()
+    -on_load_image_clicked()
+    -on_load_model_clicked()
+    -on_scan_image_clicked()
+    -on_applySettings_clicked()
+
+    -Ui::MainWindow *ui
+    -ObjectDetector* detector
+    -VideoPlayer* videoSurface
+    -void RecreateVideoPlayer(QString url)
+    -void DeleteVideoPlayer()
+    -void PauseVideoPlayer()
+    -void StartVideoPlayer()
+    -IKSimulator* simulator
+    -Qt3DWindow* view
+    -QEntity *rootEntity
+    -QWidget* viewContainer
+}
+
+class ObjectDetector extends QObject{
+    +ObjectDetector(...)
+    +void Predict(QImage image)
+    +QSize GetInputSize()
+    +void onFinishPrediction(...);
+
+    -thread t1
+    -int imageWidth
+    -int imageHeight
+    -int imageChannels
+    -int numBoxes
+    -int dimensions
+    -const int confidenceIndex
+    -const int labelStartIndex
+    -const float IOU_thresshold
+    -const float Confidence_thresshold
+    -vector<string> labels
+}
+
+class VideoPlayer extends QObject{
+    +VideoPlayer(...)
+    +~VideoPlayer()
+    +void Decode_Stream()
+    +QVector2D Video_Size()
+    +QImage getCurrentImage()
+    +QString getUrl()
+    +Video_Connection_Status status
+    +atomic_bool pause
+    +void updateVideo()
+
+    -QTimer *timer
+    -QGraphicsView *widget
+    -QGraphicsScene* scene
+    -QGraphicsPixmapItem* item
+    -QPixmap buffer
+    -QString videoUrl
+
+    -AVFormatContext* stream_context
+    -AVPacket packet
+    -AVFormatContext* allocation_context
+    -AVStream* stream
+    -AVCodec* codec
+    -AVCodecContext* video_context
+    -AVDictionary *d
+    -SwsContext* yuv420p_to_rgb24_ctx
+    -vector<uint8_t> yuv420p_picturebuffer
+    -vector<uint8_t> rgb24_picturebuffer
+    -AVFrame* yuv420p_frame
+    -AVFrame* rgb24_frame
+
+    -int frame_count
+    -int video_stream_index
+    -thread t1
+    -atomic_bool stop_thread
+    -QVector2D video_size
+    -atomic_bool writing_buffer;
+    -atomic_bool reading_buffer;
+}
+
+class IKSimulator extends QObject{
+    +IKSimulator(...)
+    +~IKSimulator()
+
+    +void setArmPosition(...)
+    +void IKSolve(QVector3D endPosition)
+    +void SortPiece()
+
+    -void moveArm()
+    -Qt3DWindow* view
+    -QEntity* rootEntity
+    -QCamera* cameraEntity
+    -QFirstPersonCameraController* camController
+    -QEntity* lightEntity
+    -QPointLight* light
+    -QTransform* lightTransform
+    -QEntity* robotBase;
+    -QEntity* groundPlane;
+    -vector<TargetPiece*> targetPieces
+    -vector<Destination> destinations
+    -QEntity* segment1Entity
+    -QCuboidMesh* segment1Mesh
+    -QTransform* segment1Transform
+    -QEntity* segment2Entity
+    -QCuboidMesh* segment2Mesh
+    -QTransform* segment2Transform
+    -float segment1Length
+    -float segment2Length
+    -float baseRotation
+    -float joint1Rotation
+    -float joint2Rotation
+    -const QVector3D restPosition
+    -QVector3D armEndeffector
+    -SortState sortState
+    -TargetPiece* sortingTarget
+    -float movementProgress
+    -QVector3D movementStart
+    -QVector3D movementPath
+    -float armSpeed
+    -QTimer* timer
+}
+
+class Ui_MainWindow {
+    // Auto generated //
+}
+
+class PredictionVisualizer extends QWidget{
+    +PredictionVisualizer(QWidget *parent)
+    +void VisualizePrediction(...)
+    #void mousePressEvent(QMouseEvent *event)
+    #void paintEvent(QPaintEvent *event)
+
+    -QImage backgroundImage
+    -vector<Prediction> predictions
+    -QSize targetSize
+}
+
+class TargetPiece extends QObject {
+    +TargetPiece(...)
+    +~TargetPiece()
+    +QEntity *getTargetEntity()
+    +QVector3D getPosition()
+    +void setPosition(const QVector3D &value);
+    +QString getTargetType()
+
+    -QEntity* rootEntity;
+    -QEntity* targetEntity;
+    -QCuboidMesh* targetMesh;
+    -QTransform* targetTransform;
+    -QString targetType
+    -QVector3D position
+}
+
+class Destination <<Struct>> {
+    +QString name
+    +QVector3D position
+}
+
+
+class Prediction <<Struct>> {
+    +QRectF bbox
+    +float confidence
+    +vector<float> labelScores
+    +string label
+}
+
+enum SortState {
+    None
+    ToPiece
+    ToDestination
+    ToRest
+}
+
+enum Video_Connection_Status {
+    Disconnected
+    Connecting
+    Connected
+}
+
+
+Ui_MainWindow - -o MainWindow
+ObjectDetector - -* MainWindow
+VideoPlayer - -* MainWindow
+IKSimulator - -* MainWindow
+Qt3DWindow - -o MainWindow
+Qt3DWindow - -o IKSimulator
+
+Prediction <|- - PredictionVisualizer
+Prediction <|- - ObjectDetector
+
+Video_Connection_Status <|- - VideoPlayer
+
+SortState <|- - IKSimulator
+TargetPiece <|- - IKSimulator
+Destination <|- - IKSimulator
+
+IKSimulator -[hidden]> MainWindow
+MainWindow -[hidden]> Ui_MainWindow
+VideoPlayer -[hidden]> IKSimulator
+QMainWindow -[hidden]-> MainWindow
+
+
+
+skinparam nodesep 20
+skinparam ranksep 30
+
+
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 11:25:05 CET 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: DK
+--></g></svg>

@@ -1,8 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <optional>
-
 #include <QMainWindow>
 #include <QElapsedTimer>
 

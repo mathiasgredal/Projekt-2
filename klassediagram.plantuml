@@ -1,13 +1,228 @@
-@startuml
-abstract        abstract
-abstract class  "abstract class"
-annotation      annotation
-circle          circle
-()              circle_short_form
-class           class
-diamond         diamond
-<>              diamond_short_form
-entity          entity
-enum            enum
-interface       interface
+@startuml klassediagram
+
+class QObject {
+    // From Qt //
+}
+
+class QMainWindow extends QWidget {
+    // From Qt //
+}
+
+class QWidget extends QObject {
+    // From Qt //
+}
+
+class MainWindow extends QMainWindow{
+    +MainWindow(QWidget *parent)
+    +~MainWindow()
+
+    -on_draw_rectangles_clicked()
+    -on_load_image_clicked()
+    -on_load_model_clicked()
+    -on_scan_image_clicked()
+    -on_applySettings_clicked()
+
+    -Ui::MainWindow *ui
+    -ObjectDetector* detector
+    -VideoPlayer* videoSurface
+    -void RecreateVideoPlayer(QString url)
+    -void DeleteVideoPlayer()
+    -void PauseVideoPlayer()
+    -void StartVideoPlayer()
+    -IKSimulator* simulator
+    -Qt3DWindow* view
+    -QEntity *rootEntity
+    -QWidget* viewContainer
+}
+
+class ObjectDetector extends QObject{
+    +ObjectDetector(...)
+    +void Predict(QImage image)
+    +QSize GetInputSize()
+    +void onFinishPrediction(...);
+
+    -thread t1
+    -int imageWidth
+    -int imageHeight
+    -int imageChannels
+    -int numBoxes
+    -int dimensions
+    -const int confidenceIndex
+    -const int labelStartIndex
+    -const float IOU_thresshold
+    -const float Confidence_thresshold
+    -vector<string> labels
+}
+
+class VideoPlayer extends QObject{
+    +VideoPlayer(...)
+    +~VideoPlayer()
+    +void Decode_Stream()
+    +QVector2D Video_Size()
+    +QImage getCurrentImage()
+    +QString getUrl()
+    +Video_Connection_Status status
+    +atomic_bool pause
+    +void updateVideo()
+
+    -QTimer *timer
+    -QGraphicsView *widget
+    -QGraphicsScene* scene
+    -QGraphicsPixmapItem* item
+    -QPixmap buffer
+    -QString videoUrl
+
+    -AVFormatContext* stream_context
+    -AVPacket packet
+    -AVFormatContext* allocation_context
+    -AVStream* stream
+    -AVCodec* codec
+    -AVCodecContext* video_context
+    -AVDictionary *d
+    -SwsContext* yuv420p_to_rgb24_ctx
+    -vector<uint8_t> yuv420p_picturebuffer
+    -vector<uint8_t> rgb24_picturebuffer
+    -AVFrame* yuv420p_frame
+    -AVFrame* rgb24_frame
+
+    -int frame_count
+    -int video_stream_index
+    -thread t1
+    -atomic_bool stop_thread
+    -QVector2D video_size
+    -atomic_bool writing_buffer;
+    -atomic_bool reading_buffer;
+}
+
+class IKSimulator extends QObject{
+    +IKSimulator(...)
+    +~IKSimulator()
+
+    +void setArmPosition(...)
+    +void IKSolve(QVector3D endPosition)
+    +void SortPiece()
+
+    -void moveArm()
+    -Qt3DWindow* view
+    -QEntity* rootEntity
+    -QCamera* cameraEntity
+    -QFirstPersonCameraController* camController
+    -QEntity* lightEntity
+    -QPointLight* light
+    -QTransform* lightTransform
+    -QEntity* robotBase;
+    -QEntity* groundPlane;
+    -vector<TargetPiece*> targetPieces
+    -vector<Destination> destinations
+    -QEntity* segment1Entity
+    -QCuboidMesh* segment1Mesh
+    -QTransform* segment1Transform
+    -QEntity* segment2Entity
+    -QCuboidMesh* segment2Mesh
+    -QTransform* segment2Transform
+    -float segment1Length
+    -float segment2Length
+    -float baseRotation
+    -float joint1Rotation
+    -float joint2Rotation
+    -const QVector3D restPosition
+    -QVector3D armEndeffector
+    -SortState sortState
+    -TargetPiece* sortingTarget
+    -float movementProgress
+    -QVector3D movementStart
+    -QVector3D movementPath
+    -float armSpeed
+    -QTimer* timer
+}
+
+class Ui_MainWindow {
+    // Auto generated //
+}
+
+class PredictionVisualizer extends QWidget{
+    +PredictionVisualizer(QWidget *parent)
+    +void VisualizePrediction(...)
+    #void mousePressEvent(QMouseEvent *event)
+    #void paintEvent(QPaintEvent *event)
+
+    -QImage backgroundImage
+    -vector<Prediction> predictions
+    -QSize targetSize
+}
+
+class TargetPiece extends QObject {
+    +TargetPiece(...)
+    +~TargetPiece()
+    +QEntity *getTargetEntity()
+    +QVector3D getPosition()
+    +void setPosition(const QVector3D &value);
+    +QString getTargetType()
+
+    -QEntity* rootEntity;
+    -QEntity* targetEntity;
+    -QCuboidMesh* targetMesh;
+    -QTransform* targetTransform;
+    -QString targetType
+    -QVector3D position
+}
+
+class Destination <<Struct>> {
+    +QString name
+    +QVector3D position
+}
+
+
+class Prediction <<Struct>> {
+    +QRectF bbox
+    +float confidence
+    +vector<float> labelScores
+    +string label
+}
+
+enum SortState {
+    None
+    ToPiece
+    ToDestination
+    ToRest
+}
+
+enum Video_Connection_Status {
+    Disconnected
+    Connecting
+    Connected
+}
+
+
+' Connections
+Ui_MainWindow --o MainWindow
+ObjectDetector --* MainWindow
+VideoPlayer --* MainWindow
+IKSimulator --* MainWindow
+Qt3DWindow --o MainWindow
+Qt3DWindow --o IKSimulator
+
+Prediction <|-- PredictionVisualizer
+Prediction <|-- ObjectDetector
+
+Video_Connection_Status <|-- VideoPlayer
+
+SortState <|-- IKSimulator
+TargetPiece <|-- IKSimulator
+Destination <|-- IKSimulator
+
+IKSimulator -[hidden]> MainWindow
+MainWindow -[hidden]> Ui_MainWindow
+VideoPlayer -[hidden]> IKSimulator
+QMainWindow -[hidden]-> MainWindow
+' ObjectDetector -[hidden]-> MainWindow
+' PredictionVisualizer -[hidden]-> MainWindow
+' TargetPiece -[hidden]-> QMainWindow
+
+
+
+skinparam nodesep 20
+skinparam ranksep 30
+
+
 @enduml
