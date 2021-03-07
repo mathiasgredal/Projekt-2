@@ -53,7 +53,6 @@ set(SOURCES
         Sources/videoplayer.cpp
         Sources/objectdetector.cpp
         Sources/predictionvisualizer.cpp
-        Sources/orbittransformcontroller.cpp
         Sources/IKSimulator.cpp
 )
 
@@ -62,7 +61,6 @@ set(HEADERS
         Headers/videoplayer.h
         Headers/objectdetector.h
         Headers/predictionvisualizer.h
-        Headers/orbittransformcontroller.h
         Headers/IKSimulator.h
 )
 
